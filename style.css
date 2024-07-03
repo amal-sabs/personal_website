@@ -1,8 +1,9 @@
 header {
-    font-family: "Danfo", serif;
+    font-family: "Margarine", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 3.5vw;
+    font-size: 3vw;
+    text-align: center;
     font-style: normal;
     font-variation-settings:
       "ELSH" 0;
@@ -14,13 +15,96 @@ body{
     background-color: black;
     color:white;
     text-align:center;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 1.25vw;
+    font-size: 1.15vw;
 }
 
-nav{
-    font-size: 1.5vw;
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #2f00ff;
+    padding: 1rem;
+}
+
+.navOption {
+    margin: 0 1rem; 
+}
+
+.navOption a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.navOption a:hover {
+    background-color: #3498db;
+    text-decoration: underline;
+}
+
+.contact {
+    background-color: #ffffff; /* White background for the form */
+    padding: 2rem; /* Padding around the form */
+    margin: 2rem auto; /* Center the form on the page */
+    max-width: 600px; /* Limit the width of the form */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    border: 1px solid #ddd; /* Light border for definition */
+}
+
+.contact h2 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 1.5rem; /* Space below the heading */
+    font-family: 'Lilita One', cursive; /* Custom font for the heading */
+    color: #2c3e50; /* Dark color for the heading */
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Space between each form group */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.form-group label {
+    margin-bottom: 0.5rem; /* Space below labels */
+    font-weight: bold; /* Bold labels for emphasis */
+    color: #2980b9; /* Color for the labels */
+}
+
+.form-group input, .form-group textarea {
+    padding: 0.75rem; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    width: 100%; /* Full width input fields */
+    box-sizing: border-box; /* Include padding and border in width */
+    font-size: 1rem; /* Font size for input fields */
+    font-family: 'Roboto Condensed', sans-serif; /* Custom font for input fields */
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #2980b9; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5); /* Add subtle shadow on focus */
+}
+
+.form-group button {
+    padding: 0.75rem 1.5rem; /* Padding inside button */
+    background-color: #2980b9; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for button text */
+    font-family: 'Roboto Condensed', sans-serif; /* Custom font for button text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.form-group button:hover {
+    background-color: #3498db; /* Change background color on hover */
 }
